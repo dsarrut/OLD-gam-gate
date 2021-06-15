@@ -31,6 +31,11 @@ files = sorted(files)
 
 print(f'Running {len(files)} tests')
 
+if not os.path.exists("log") and len(files) >0:
+    os.makedirs("log")
+if not os.path.exists("output") and len(files) >0:
+    os.makedirs("output")
+
 for f in files:
     print(f'-' * 70)
     print(f'Running: {f}', end='')

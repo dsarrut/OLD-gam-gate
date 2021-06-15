@@ -118,6 +118,7 @@ sim.start()
 # get results
 stats = sim.get_actor('Stats')
 print(stats)
+stats.write('./gate_test10_generic_source/output/stat.txt')
 
 dose = sim.get_actor('dose')
 print(dose)

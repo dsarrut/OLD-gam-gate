@@ -28,6 +28,7 @@ gam.source_log.setLevel(gam.DEBUG)
 sim.start()
 
 stats = sim.get_actor('Stats')
+stats.write('./gate_test13_phys_lists/output/stat_2.txt')
 
 # Gate mac/main_2.mac
 stats_ref = gam.read_stat_file('./gate_test13_phys_lists/output/stat_2.txt')

@@ -36,6 +36,7 @@ gam.source_log.setLevel(gam.DEBUG)  # FIXME do not work
 sim.start()
 
 stats = sim.get_actor('Stats')
+stats.write('./gate_test13_phys_lists/output/stat_4.txt')
 
 # gate_test4_simulation_stats_actor
 # Gate mac/main.mac

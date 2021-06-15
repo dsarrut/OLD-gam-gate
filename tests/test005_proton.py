@@ -55,7 +55,7 @@ sim.start()
 
 stats = sim.get_actor('Stats')
 print(stats)
-
+stats.write('./gate_test5_proton/output/stat.txt')
 
 # gate_test5_proton
 # Gate mac/main.mac

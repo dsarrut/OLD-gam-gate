@@ -59,6 +59,7 @@ sim.start()
 
 # get result
 stats = sim.get_actor('Stats')
+stats.write('./gate_test4_simulation_stats_actor/output/stat.txt')
 
 # gate_test4_simulation_stats_actor
 # Gate mac/main.mac

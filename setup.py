@@ -32,5 +32,7 @@ setuptools.setup(
         'sphinx_pdj_theme',
         'recommonmark',
         'matplotlib',
+        'uproot',
+        'gatetools',
         'colorlog']
 )
