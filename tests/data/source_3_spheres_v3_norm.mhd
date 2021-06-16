@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -86.914145999999988 11.718615999999997 159.5
+CenterOfRotation = 0 0 0
+AnatomicalOrientation = RAI
+ElementSpacing = 0.97656200000000004 0.97656200000000004 1.25
+DimSize = 98 39 78
+ElementType = MET_FLOAT
+ElementDataFile = source_3_spheres_v3_norm.raw

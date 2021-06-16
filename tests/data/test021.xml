@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VVState>
+  <Globals/>
+  <GUI/>
+  <Images>
+    <Image Index="0">
+      <FileName>/Users/dsarrut/src/gate2/gam/tests/data/10x10x10.mhd</FileName>
+      <Preset>3</Preset>
+      <Fusion>
+        <FileName>/Users/dsarrut/src/gate2/gam/tests/output/test021-odd-edep.mhd</FileName>
+        <FusionOpacity>30</FusionOpacity>
+        <FusionThresholdOpacity>1</FusionThresholdOpacity>
+        <FusionColorMap>3</FusionColorMap>
+        <FusionWindow>1.016</FusionWindow>
+        <FusionLevel>0.507998</FusionLevel>
+      </Fusion>
+    </Image>
+    <Image Index="1">
+      <FileName>/Users/dsarrut/src/gate2/gam/tests/data/11x11x11.mhd</FileName>
+      <Preset>7</Preset>
+      <Fusion>
+        <FileName>/Users/dsarrut/src/gate2/gam/tests/output/test021-even-edep.mhd</FileName>
+        <FusionOpacity>30</FusionOpacity>
+        <FusionThresholdOpacity>1</FusionThresholdOpacity>
+        <FusionColorMap>3</FusionColorMap>
+        <FusionWindow>1.86401</FusionWindow>
+        <FusionLevel>0.932006</FusionLevel>
+      </Fusion>
+    </Image>
+    <Image Index="2">
+      <FileName>/Users/dsarrut/src/gate2/gam/tests/output/test021-odd-edep.mhd</FileName>
+      <Preset>0</Preset>
+    </Image>
+    <Image Index="3">
+      <FileName>/Users/dsarrut/src/gate2/gam/tests/output/test021-even-edep.mhd</FileName>
+      <Preset>0</Preset>
+    </Image>
+  </Images>
+  <Links>
+    <LinkedFrom Id="/Users/dsarrut/src/gate2/gam/tests/data/10x10x10.mhd0">
+      <LinkedTo>/Users/dsarrut/src/gate2/gam/tests/output/test021-odd-edep.mhd2</LinkedTo>
+    </LinkedFrom>
+    <LinkedFrom Id="/Users/dsarrut/src/gate2/gam/tests/data/11x11x11.mhd2">
+      <LinkedTo>/Users/dsarrut/src/gate2/gam/tests/output/test021-even-edep.mhd3</LinkedTo>
+    </LinkedFrom>
+    <LinkedFrom Id="/Users/dsarrut/src/gate2/gam/tests/output/test021-odd-edep.mhd2">
+      <LinkedTo>/Users/dsarrut/src/gate2/gam/tests/data/10x10x10.mhd0</LinkedTo>
+    </LinkedFrom>
+    <LinkedFrom Id="/Users/dsarrut/src/gate2/gam/tests/output/test021-even-edep.mhd3">
+      <LinkedTo>/Users/dsarrut/src/gate2/gam/tests/data/11x11x11.mhd2</LinkedTo>
+    </LinkedFrom>
+  </Links>
+  <Tools>
+    <ROIManager>
+      <ToolType_Index>7</ToolType_Index>
+      <Tool_Index>0</Tool_Index>
+      <Image_Index>1</Image_Index>
+      <ROI>
+        <Image>/Users/dsarrut/src/gate2/gam/tests/data/four_points.mhd</Image>
+        <Overlay Red="0" Green="1" Blue="0" Visible="1" Opacity="0.5" Depth="2"/>
+        <Contour Red="0" Green="1" Blue="0" Visible="0" Width="1"/>
+      </ROI>
+    </ROIManager>
+  </Tools>
+</VVState>
