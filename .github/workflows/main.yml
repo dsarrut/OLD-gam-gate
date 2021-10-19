@@ -81,8 +81,11 @@ jobs:
           git clone https://gitlab.in2p3.fr/opengamgate/gam-tests.git
           cd gam-tests
           git lfs checkout
+          echo "coucou0"
           if [ "${{ matrix.os }}" == "ubuntu-latest" ]; then
+              echo "coucou1"
               path=`python -c "import utils; utils.get_site_packages_dir()"`
+              echo "coucou2"
               export LD_LIBRARY_PATH="${path}/gam_g4.libs":${LD_LIBRARY_PATH}
               path=`python -c "import utils; utils.get_libG4processes_path()"`
               export LD_PRELOAD=${path}:${LD_PRELOAD}
