@@ -87,12 +87,19 @@ jobs:
               path=`python -c "import utils; utils.get_site_packages_dir()"`
               echo "coucou2"
               export LD_LIBRARY_PATH="${path}/gam_g4.libs":${LD_LIBRARY_PATH}
+              echo "coucou3"
               path=`python -c "import utils; utils.get_libG4processes_path()"`
+              echo "coucou4"
               export LD_PRELOAD=${path}:${LD_PRELOAD}
+              echo "coucou5"
               path=`python -c "import utils; utils.get_libG4geometry_path()"`
+              echo "coucou6"
               export LD_PRELOAD=${path}:${LD_PRELOAD}
+              echo "coucou7"
           fi
+          echo "coucou8"
           OutputTest=$(./all_tests.py)
+          echo "coucou9"
           echo "$OutputTest"
           OutputTest=$(echo "$OutputTest" | tail -1)
           if [ "$OutputTest" != "True" ]; then
